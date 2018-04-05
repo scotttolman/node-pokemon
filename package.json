@@ -1,6 +1,6 @@
 {
   "name": "pokemon-stat-and-damage-calculator",
-  "version": "1.0",
+  "version": "8.11.1",
   "description": "Pokemon stat and damage calculator",
   "engines": {
     "node": "8.9.1"
@@ -18,5 +18,8 @@
     "pokemon",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
