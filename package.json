@@ -20,6 +20,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "ajax-request": "^1.2.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "pokedex-promise-v2": "^3.1.1"
   }
 }

@@ -6,6 +6,7 @@
     <title>Pokemon Damage Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
 </head>
 <body onload="initialize()">
@@ -67,7 +68,7 @@
             </tr>
         </table>
         <br>
-        <button id="yData" onclick="getData('https://pokeapi.co/api/v2/pokemon/' + yourPokemon.value.toLowerCase() + '/', 1)">Get Data</button>
+        <button id="yData">Get Data</button>
         <br>
         <img src="pokeball.png" alt="pokeball" id="yBall">
         <br>
@@ -181,7 +182,7 @@
             </tr>
         </table>
         <br>
-            <button id="oData" onclick="getData('https://pokeapi.co/api/v2/pokemon/' + oppPokemon.value.toLowerCase() + '/', 2)">Get Data</button>
+            <button id="oData">Get Data</button>
             <br>
             <img src="pokeball.png" alt="pokeball" id="oBall">
         <br>
@@ -260,7 +261,7 @@
             </tr>
         </table>
         <br>
-        <button id="moveData" onclick="getData(moves.value, 3)">Calc Damage</button>
+        <button id="moveData">Calc Damage</button>
         <br>
         <img src="pokeball.png" alt="pokeball" id="dBall">
         <br>
