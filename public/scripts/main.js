@@ -149,7 +149,7 @@ $(document).ready(function(){
 
     $("#yData").click(function(){
         JO = getObject(1);
-        $.post("http://localhost:5000/pokemon", JO,  function(data, status){
+        $.post(window.location.href + "pokemon", JO,  function(data, status){
             console.log(data);
             calcYStats(data);
             popMoves(data.moves, data.Speed);
@@ -157,14 +157,14 @@ $(document).ready(function(){
     });
     $("#oData").click(function(){
         JO = getObject(2);
-        $.post("http://localhost:5000/pokemon", JO,  function(data, status){
+        $.post(window.location.href + "pokemon", JO,  function(data, status){
             console.log(data);
             calcOStats(data);
         });
     });
     $("#moveData").click(function(){
         JO = getObject(3);
-        $.post("http://localhost:5000/move", JO,  function(data, status){
+        $.post(window.location.href + "move", JO,  function(data, status){
             console.log(data);
             calcDamage(data);
         });
