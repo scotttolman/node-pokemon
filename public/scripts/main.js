@@ -97,7 +97,7 @@ function getJO(code) {
     var input = {};
     if (code == 1) {
         input.block = 'y';
-        input.name = document.getElementById("yourPokemon").value;
+        input.name = document.getElementById("yourPokemon").value.toLowerCase();
         input.level = document.getElementById("yLevel").value;
         input.hpEV = document.getElementById("yHPEV").value;
         input.hpIV = document.getElementById("yHPIV").value;
@@ -114,7 +114,7 @@ function getJO(code) {
     }
     else if (code == 2) {
         input.block = 'o';
-        input.name = document.getElementById("oppPokemon").value;
+        input.name = document.getElementById("oppPokemon").value.toLowerCase();
         input.level = document.getElementById("oLevel").value;
         input.hpEV = document.getElementById("oHPEV").value;
         input.hpIV = document.getElementById("oHPIV").value;
